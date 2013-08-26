@@ -4,6 +4,7 @@ RCS
 target
 build
 DerivedData
+locktest
 
 *.class
 *.o
