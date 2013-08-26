@@ -13,6 +13,13 @@ feature is supported in Linux Kernel 2.6.28 and higher.  Apparently, the
 default O2CB cluster stack is a kernel-based cluster stack not a 
 userspace cluster stack.
 
+POSIX locks are used internally by Java's ```FileChannel.lock``` method.
+Thus, lock support on OCFS2 is relevant to anyone trying to use file
+locks in Java to support synchronization between Java processes running
+on different cluster nodes.  This is one of the [supported HA solutions]
+(http://activemq.apache.com/shared-file-system-master-slave.html) for
+[Apache Active MQ] (http://activemq.apache.com).
+
 Using the utilities in this project, you can quickly assess what you're
 working with in your OCFS2 configuration.
 
