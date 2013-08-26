@@ -13,6 +13,9 @@ feature is supported in Linux Kernel 2.6.28 and higher.  Apparently, the
 default O2CB cluster stack is a kernel-based cluster stack not a 
 userspace cluster stack.
 
+Using the utilities in this project, you can quickly assess what you're
+working with in your OCFS2 configuration.
+
 Building
 --------
 This project includes a simple utility written in C as well as a 
