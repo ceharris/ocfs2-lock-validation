@@ -61,3 +61,9 @@ Example --- acquire a lock on a file named LOCK
 java LockTest LOCK
 ```
 
+References
+----------
+
+[1] http://oss.oracle.com/projects/ocfs2/dist/documentation/v1.4/ocfs2-1_4-usersguide.pdf
+[2]  https://oss.oracle.com/osswiki/OCFS2/NewFeaturesList.html
+
