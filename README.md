@@ -6,7 +6,7 @@ validating lock support on an OCFS2 filesystem.  Historically, OCFS2
 supported only advisory locks using the ```flock```(2) system call.
 
 OCFS2 supports POSIX style locks (see ```lockf```(3) and ```fcntl```(2))
-but only when using an userspace cluster stack_.  Apparently, the 
+but only when using a _userspace cluster stack_.  Apparently, the 
 default O2CB cluster stack is a kernel-based cluster stack.
 
 Building
