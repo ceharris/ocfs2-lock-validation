@@ -3,11 +3,15 @@ ocfs2-lock-validation
 
 This small project provides a couple of useful utilities for 
 validating lock support on an OCFS2 filesystem.  Historically, OCFS2
-supported only advisory locks using the ```flock```(2) system call.
+supported only advisory locks using the ```flock```(2) system call as
+documented in [1] section III, item 10, page 12.
 
 OCFS2 supports POSIX style locks (see ```lockf```(3) and ```fcntl```(2))
-but only when using a _userspace cluster stack_.  Apparently, the 
-default O2CB cluster stack is a kernel-based cluster stack.
+but only when using a **userspace cluster stack**.  This is documented 
+in [2] in the section entitled _Cluster aware POSIX file locks_.  The 
+feature is supported in Linux Kernel 2.6.28 and higher.  Apparently, the 
+default O2CB cluster stack is a kernel-based cluster stack not a 
+userspace cluster stack.
 
 Building
 --------
